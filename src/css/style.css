@@ -26,7 +26,7 @@
     font-family: fangsong;
     width: 100%;
   }
-  .navbar{
+  .hero-section .navbar{
     position: fixed;
     top: 0;
     left: 0;
@@ -48,12 +48,19 @@
   max-width: 550px;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  text-align: left;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   font-size: 25px;
-  flex-wrap: wrap;
   margin-right: 40px !important;
+}
+.hero-text .btn{
+  font-size: 30px;
+  padding: 20px 30px;
+  margin-left: 35%;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
 }
 .hero-section p{
   font-size: 30px;
@@ -63,7 +70,28 @@
   margin-top: 2rem;
   margin-bottom: 2rem;
   font-family:"Great Vibes", cursive   !important;
-  font-size: clamp(50px, 20vw, 200px) !important; 
+  font-size: 200px !important; 
+}
+.hero-text h1::after{
+  content: "";
+  font-size: 200px;
+  animation-name: animatingtext;
+  animation-duration: 1.4s;
+  animation-timing-function: steps(6);
+  animation-fill-mode: forwards;
+  white-space: nowrap;
+}
+@keyframes animatingtext{
+  0% {content: "W";}
+  20% {content: "We";}
+  40% {content: "Wel";}
+  60% {content: "Welc";}
+  80% {content: "Welco";}
+  100% {content: "Welcom";}
+}
+.hero-text a{
+  color: black;
+  text-decoration: none;
 }
   .navbar-nav{
     gap: 9rem;
@@ -150,7 +178,7 @@
   .second h1{
     font-size: 70px;
     font-weight: bold;
-    color: #603809;
+    color: rgb(69, 34, 1);
     margin-bottom: 29px;
   }
   .second p{
@@ -191,7 +219,7 @@
 }
 .Menu h1{
   font-weight: bold !important;
-  color: #603809;
+  color: rgb(69, 34, 1);
   font-size: 70px;
 }
 .Menu .card img{
@@ -205,7 +233,7 @@
 .Menu h5{
   margin-bottom: 0 !important;
   font-weight: bold;
-  color: #603809;
+  color: rgb(69, 34, 1);
   font-size: 20px;
 }
 .Menu .card p{
@@ -214,7 +242,7 @@
 }
 .Menu .p2{
   font-weight: bold;
-  color: #603809;
+  color: rgb(69, 34, 1);
   font-size: 17px;
 }
 .Menu .cards{
@@ -226,7 +254,7 @@
   gap: 1rem;
 }
 .Menu h5{
-  color: #603809;
+  color: rgb(69, 34, 1);
   font-weight: bold;
   font-size: 20px;
 }
@@ -253,3 +281,6 @@
 }
 
 
+.hero .navbar{
+  background-color: rgb(69, 34, 1) !important;
+}
