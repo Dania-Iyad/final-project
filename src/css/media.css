@@ -1,0 +1,56 @@
+@media screen and (max-width: 992px){
+    .transparent-navbar {
+    background-color: rgba(27, 14, 2, 0.722) !important;
+    backdrop-filter: blur(10px) ;
+  }
+  .hero-text .container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .img1{
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .second .container {
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+  }
+  .second h1 {
+    font-size: 50px;
+  }
+  .second p {
+    font-size: 20px;
+  }
+  .Menu h1 {
+    font-size: 40px;
+  }
+  .Menu p {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .Menu .cards {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+      }
+      .Menu .card {
+        width: 100% !important;
+        
+        margin-bottom: 25px;
+      }
+    .Menu h1 {
+        font-size: 35px;
+      }
+    .Menu .text-center p{
+        font-size: 20px;
+    }
+      .Menu p {
+        font-size: 20px;
+      }
+  .Menu {
+    margin-top: 150px;
+  }
+}

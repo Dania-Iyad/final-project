@@ -1,0 +1,255 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body{
+    margin: 0 !important;
+  }
+ .container{
+  position: relative;
+  margin-left: 93px;
+  margin-right: 93px;
+ } 
+.great-vibes-regular {
+  font-family: "Great Vibes", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+  .container .navbar-brand{
+    font-family:"Great Vibes", cursive   ;
+    font-size: 40px;
+  }
+  .hero-section {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)) , url("../images/bgh.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    position: relative;
+    color: white;
+    font-family: fangsong;
+    width: 100%;
+  }
+  .navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10000000;
+    background-color: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(8px);
+  }
+  .transparent-navbar {
+    background-color: transparent !important;
+    padding-top: 1.5rem;
+  }
+  .hero-text {
+  font-family: fangsong;
+  position: absolute;
+  top: 50%;
+  left: 12.3%; 
+  transform: translateY(-50%);   
+  max-width: 550px;
+  width: 100%;  
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  text-align: left;
+  font-size: 25px;
+  flex-wrap: wrap;
+}
+.hero-text h1{
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  font-family:"Great Vibes", cursive   !important;
+  font-size: 200px !important;}
+  .navbar-nav{
+    gap: 60px;
+  }
+  .navbar-nav .btn{
+    font-size: 2rem !important;
+  }
+  .btn-transparent {
+    background-color: transparent;
+    border: none;
+    color: white; 
+  }
+  a.text-white:hover {
+    color: #f9c06a !important;
+  }
+  .nav-link:hover {
+    color: #f9c06a !important;
+  }
+  .btn-signup:hover {
+    background-color: white;
+    color: black;
+  }
+  .transparent-navbar {
+    background-color: transparent !important;
+  }
+  .navbar-nav .nav-link:hover {
+    color: #f9c06a !important;
+  }
+  .btn-warning {
+    transition: 0.3s ease;
+  }
+  .btn-warning:hover {
+    background-color: #d9a854;
+    transform: scale(1.05);
+  }
+  .btn-transparent {
+    background-color: transparent;
+    border: none;
+    color: white;
+    transition: 0.3s ease;
+  }
+  .btn-transparent:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #f9c06a;
+  }
+  .btn-shadow {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.3s ease-in-out; 
+  }
+  .btn-shadow:hover {
+    box-shadow: 0 12px 24px rgba(255, 193, 7, 0.7);; 
+  }
+  .hero-section button{
+    font-weight: 900;
+  }
+
+
+
+
+
+
+    .second{
+    margin-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    font-family: fangsong;
+    justify-content: center;
+    gap: 2rem;
+    padding: 0 20px;
+  }
+  .second .img {
+  max-width: 100%;
+  height: auto;
+}
+  .second .container{
+    position: relative;
+    display: flex; 
+    align-items: center !important;
+    justify-content: center;
+    gap: 95px;
+   
+  }
+  .second h1{
+    font-size: 70px;
+    font-weight: bold;
+    color: #603809;
+    margin-bottom: 29px;
+  }
+  .second p{
+    font-size: 25px;
+    color: #707070;
+    margin-bottom: 29px;
+
+  }
+  .second button{
+    font-weight: bold;
+    height: 48px;
+  }
+
+.img1 {
+  top: -150px;
+  max-width: 100%;
+  height: auto;
+  position: relative;
+  z-index: 1;
+}
+.img2 {
+  top: -150px;
+  right: 0 !important;
+  max-width: 100%;
+  height: auto;
+  position: relative;
+  z-index: 1;
+}
+
+.Menu {
+  font-family: fangsong;
+  padding: 0 20px;
+}
+.Menu .container{
+  max-width: 1140px;
+  margin: 0 auto;
+  text-align: center;
+}
+.Menu h1{
+  font-weight: bold !important;
+  color: #603809;
+  font-size: 70px;
+}
+.Menu .card img{
+  height: 100%;
+}
+.Menu p{
+  margin-bottom: 32px !important;
+  font-size: 25px;
+  color: #707070;
+}
+.Menu h5{
+  margin-bottom: 0 !important;
+  font-weight: bold;
+  color: #603809;
+  font-size: 20px;
+}
+.Menu .card p{
+  margin-bottom: 0 !important;
+  font-size: 17px;
+}
+.Menu .p2{
+  font-weight: bold;
+  color: #603809;
+  font-size: 17px;
+}
+.Menu .cards{
+  width: 100%;
+  flex-wrap: wrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.Menu h5{
+  color: #603809;
+  font-weight: bold;
+  font-size: 20px;
+}
+.Menu .card{
+  position: relative;
+  height: 388px;
+  width: 250px;
+  background-color: #f9c06a14;
+  border-color: #f9c06a;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-height: 364px;
+
+}  
+.Menu button{
+  position: absolute;
+  margin-top: 10px!important;
+  font-weight: bold;
+  font-size: 15px;
+  bottom: -25px;
+  transform: translateX(-50%);
+}
+
+
