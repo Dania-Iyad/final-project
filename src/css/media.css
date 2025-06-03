@@ -15,7 +15,12 @@
     font-size: 180px !important;
   }
   .hero-text p{
-    font-size: 20px;
+    font-size: 30px;
+  }
+  .navbar-nav{
+    gap: 3rem;
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
 
 
@@ -47,7 +52,7 @@
     font-size: 150px !important;
   }
   .hero-text p{
-    font-size: 18px;
+    font-size: 26px;
   }
   .hero-text .container{
     margin-left: 0;
