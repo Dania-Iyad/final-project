@@ -6,11 +6,6 @@
   body{
     margin: 0 !important;
   }
- .container{
-  position: relative;
-  margin-left: 93px;
-  margin-right: 93px;
- } 
 .great-vibes-regular {
   font-family: "Great Vibes", cursive;
   font-weight: 400;
@@ -51,7 +46,6 @@
   left: 12.3%; 
   transform: translateY(-50%);   
   max-width: 550px;
-  width: 100%;  
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -59,12 +53,15 @@
   text-align: left;
   font-size: 25px;
   flex-wrap: wrap;
+  margin-right: 40px !important;
 }
 .hero-text h1{
+  width: 100%;
   margin-top: 2rem;
   margin-bottom: 2rem;
   font-family:"Great Vibes", cursive   !important;
-  font-size: 200px !important;}
+  font-size: clamp(50px, 20vw, 200px) !important; 
+}
   .navbar-nav{
     gap: 60px;
   }
