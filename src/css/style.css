@@ -70,11 +70,10 @@
   margin-top: 2rem;
   margin-bottom: 2rem;
   font-family:"Great Vibes", cursive   !important;
-  font-size: 200px !important; 
+  font-size: 14vw ; 
 }
 .hero-text h1::after{
   content: "";
-  font-size: 200px;
   animation-name: animatingtext;
   animation-duration: 1.4s;
   animation-timing-function: steps(6);

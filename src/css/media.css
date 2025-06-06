@@ -8,11 +8,7 @@
     padding-right: 0;
     width: 80%;
   }
-  .hero-text h1{
-    left: 8%;
-  }
 .hero-text h1{
-    font-size: 180px !important;
   }
   .hero-text p{
     font-size: 30px;
@@ -49,7 +45,6 @@
 
 @media screen and (max-width: 768px) {
   .hero-text h1{
-    font-size: 150px !important;
   }
   .hero-text p{
     font-size: 26px;
@@ -81,9 +76,19 @@
     margin-top: 150px;
   }
 }
+
+@media screen and (max-width: 555px) {
+  .hero-text h1{
+  }
+}
+
+@media screen and (max-width: 475px) {
+  .hero-text h1{
+  }
+}
+
 @media screen and (max-width: 314px) {
   .hero-text h1{
-    font-size: 10px !important;
   }
 }
 @media screen and (max-width: 351px) {
@@ -91,6 +96,5 @@
     width: 100%;
   }
   .hero-text h1{
-    font-size: 120px !important;
   }
 }
