@@ -1,18 +1,18 @@
+html {
+  scroll-behavior: smooth;
+}
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
   }
-  .fade-out {
-  opacity: 0;
-  transition: opacity 0.5s ease;
-}
   body{
+  font-family: "Great Vibes", cursive;
+    display: flex;
+    flex-direction: column;
     margin: 0 !important;
   }
-html {
-  scroll-behavior: smooth;
-}
+
 .great-vibes-regular {
   font-family: "Great Vibes", cursive;
   font-weight: 400;
@@ -124,6 +124,10 @@ html {
   .nav-link:hover {
     color: #f9c06a !important;
   }
+  .btn-signup:hover {
+    background-color: white;
+    color: black;
+  }
   .btn:hover{
     background-color: #f9c06a !important;
   }
@@ -159,6 +163,142 @@ html {
   }
 
 
+.img1 {
+  top: -85px;
+  max-width: 400px;
+  height: auto;
+  position: absolute;
+}
+.img2 {
+  z-index: -1;
+  top: -100px;
+  position: absolute;
+  max-width: 400px !important;
+  right: 0 !important;
+}
+.image-container {
+  position: relative; 
+}
+
+
+#Menu {
+    margin-top: 270px;
+  font-family: fangsong;
+  padding: 0 20px;
+}
+#Menu .container{
+  margin-top: -100px !important;
+  margin: auto;
+  text-align: center;
+}
+#Menu h1{
+  font-weight: bold !important;
+  color: rgb(69, 34, 1);
+  font-size: 70px;
+}
+#Menu .card img{
+  height: 100%;
+}
+#Menu p{
+  margin-bottom: 32px !important;
+  font-size: 25px;
+  color: #707070;
+}
+#Menu h5{
+  margin-bottom: 0 !important;
+  font-weight: bold;
+  color: rgb(69, 34, 1);
+  font-size: 20px;
+}
+#Menu .card p{
+  margin-bottom: 0 !important;
+  font-size: 17px;
+}
+#Menu .p2{
+  font-weight: bold;
+  color: rgb(69, 34, 1);
+  font-size: 17px;
+}
+#Menu .cards{
+  width: 100%;
+  flex-wrap: wrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+#Menu h5{
+  color: rgb(69, 34, 1);
+  font-weight: bold;
+  font-size: 20px;
+}
+#Menu .card{
+  box-shadow :#3f2600;
+  position: relative;
+  height: 600px !important;
+  width: 250px;
+  background-color: #f9c06a14;
+  border-color: #b76f03;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-height: 364px;
+}  
+#Menu .card:hover {
+  transform: translateY(-5px);
+box-shadow: 0 -10px 20px #3f2600, 0 10px 20px #3f2600;}
+
+#Menu a{
+  background-color: #f9c06a;
+  border-color: #f9c06a !important;
+}
 
 
 
+
+
+
+ .hero-text2 {
+  font-family: fangsong;
+  position: absolute;
+  top: 50%;
+  left: 12.3%; 
+  transform: translateY(-50%);   
+  max-width: 550px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 25px;
+  margin-right: 40px !important;
+}
+.hero-text2 h1{
+  color: #f9c06a;
+  width: 100%;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  font-family:"Great Vibes", cursive   !important;
+  font-size: clamp(90px, 15vw, 300px) !important;
+}
+.hero .navbar{
+  background-color: rgb(69, 34, 1) !important;
+}
+.hero-section p{
+  font-size: clamp(30px, 2vw, 150px) ;
+}
+
+
+
+#About-Us{
+    margin-top: 82px;
+}
+
+#About-Us .container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
