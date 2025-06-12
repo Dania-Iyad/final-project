@@ -39,7 +39,7 @@ html {
     left: 0;
     width: 100%;
     z-index: 10000000;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color:rgba(15, 8, 1, 0.608) !important;
     backdrop-filter: blur(8px);
   }
   .transparent-navbar {
@@ -107,9 +107,18 @@ html {
   color: black;
   text-decoration: none;
 }
+.hero-text a:hover{
+  .name:hover {
+  color: #f9c06a;
+  transform: scale(1.05);
+  cursor: pointer;
+}
+}
   .navbar-nav{
+    margin-left: auto;
     gap: 9rem;
   }
+
   .navbar-nav .btn{
     font-size: 2rem !important;
   }
@@ -124,6 +133,17 @@ html {
   .nav-link:hover {
     color: #f9c06a !important;
   }
+  .name {
+  color: white;
+  transition: color 0.4s ease, transform 0.3s ease;
+}
+
+.name:hover {
+  color: #f9c06a;
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
   .btn-signup:hover {
     background-color: white;
     color: black;
@@ -163,6 +183,9 @@ html {
   }
 
 
+
+
+
 .img1 {
   top: -85px;
   max-width: 400px;
@@ -197,7 +220,12 @@ html {
   font-size: 70px;
 }
 #Menu .card img{
-  height: 100%;
+   width: 100%;
+   height: 217px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
 }
 #Menu p{
   margin-bottom: 32px !important;
@@ -235,7 +263,7 @@ html {
 #Menu .card{
   box-shadow :#3f2600;
   position: relative;
-  height: 600px !important;
+  height: 1000px !important;
   width: 250px;
   background-color: #f9c06a14;
   border-color: #b76f03;

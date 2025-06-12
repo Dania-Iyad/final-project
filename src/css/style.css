@@ -18,6 +18,9 @@ html {
   font-weight: 400;
   font-style: normal;
 }
+.hero-text ul{
+  margin-left: auto;
+}
   .container .navbar-brand{
     font-family:"Great Vibes", cursive   ;
     font-size: 40px;
@@ -107,7 +110,8 @@ html {
   color: black;
   text-decoration: none;
 }
-  .navbar-nav{
+ .navbar-nav{
+    margin-left: auto;
     gap: 9rem;
   }
   .navbar-nav .btn{
