@@ -199,13 +199,19 @@ html {
   max-width: 400px !important;
   right: 0 !important;
 }
+.img3 {
+  top: -110px;
+  max-width: 400px;
+  height: auto;
+  position: absolute;
+}
 .image-container {
   position: relative; 
 }
 
 
 #Menu {
-    margin-top: 270px;
+  margin-top: 270px;
   font-family: fangsong;
   padding: 0 20px;
 }
@@ -216,7 +222,7 @@ html {
 }
 #Menu h1{
   font-weight: bold !important;
-  color: rgb(69, 34, 1);
+  color: #441c12;
   font-size: 70px;
 }
 #Menu .card img{
@@ -235,7 +241,7 @@ html {
 #Menu h5{
   margin-bottom: 0 !important;
   font-weight: bold;
-  color: rgb(69, 34, 1);
+  color: #441c12;
   font-size: 20px;
 }
 #Menu .card p{
@@ -244,7 +250,7 @@ html {
 }
 #Menu .p2{
   font-weight: bold;
-  color: rgb(69, 34, 1);
+  color: #441c12;
   font-size: 17px;
 }
 #Menu .cards{
@@ -256,12 +262,12 @@ html {
   gap: 2rem;
 }
 #Menu h5{
-  color: rgb(69, 34, 1);
+  color: #441c12;
   font-weight: bold;
   font-size: 20px;
 }
 #Menu .card{
-  box-shadow :#3f2600;
+  box-shadow :#441c12;
   position: relative;
   height: 1000px !important;
   width: 250px;
@@ -311,7 +317,7 @@ box-shadow: 0 -10px 20px #3f2600, 0 10px 20px #3f2600;}
   font-size: clamp(90px, 15vw, 300px) !important;
 }
 .hero .navbar{
-  background-color: rgb(69, 34, 1) !important;
+  background-color: #441c12 !important;
 }
 .hero-section p{
   font-size: clamp(30px, 2vw, 150px) ;
@@ -320,13 +326,78 @@ box-shadow: 0 -10px 20px #3f2600, 0 10px 20px #3f2600;}
 
 
 #About-Us{
-    margin-top: 82px;
+  font-family: fangsong;
+  margin-top: 82px;
 }
-
+#About-Us h1{
+  font-weight: bold !important;
+  color: #441c12;
+  font-size: 70px;
+  margin-bottom: 16px;
+}
+#About-Us h3{
+  font-weight: bold;
+  color: #441c12;
+}
+#About-Us .p1{
+  margin-bottom: 32px !important;
+  font-size: 25px;
+  color: #707070;
+  margin-bottom: 32px;
+}
+#About-Us .p2{
+  text-align: center;
+  font-size: 20px;
+  margin-top: 8px;
+  color: #707070;
+}
 #About-Us .container{
     position: relative;
     display: flex;
+    margin-bottom: 82px;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
+#About-Us .card{
+  max-width: 280px;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #FFEED8;
+  border-color: #FFEED8;
+}
+#About-Us .card:hover {
+  transform: scale(1.05); 
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* ظل ناعم */
+  cursor: pointer;
+  box-shadow: 0 8px 16px #FFEED8;
+}
+#About-Us .card img{
+  margin-top: 36px;
+  margin-bottom: 26px;
+  max-width: 88px;
+}
+#About-Us .card p{
+  max-width: 176px;
+}
+#About-Us .cards{
+  width: 100%;
+  flex-wrap: wrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+
+
+#Contact-Us{
+  height: 500px;
+  margin-top: 110px;
+  background-color: #441c12;
+}
+
+

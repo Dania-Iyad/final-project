@@ -1,3 +1,25 @@
+@media screen and (max-width: 1400px){
+  #About-Us .cards{
+    width: 1300px !important;
+  }
+}
+@media screen and (max-width: 1320px){
+  #About-Us .card{
+    width: 250px !important;
+  }
+  #About-Us .cards{
+    width: 1116px !important;
+  }
+}
+@media screen and (max-width: 1200px){
+  #About-Us .cards{
+    width: 900px !important;
+  }
+  #About-Us .card{
+    width: 1116px !important;
+  }
+}
+
 @media screen and (max-width: 992px){
     .transparent-navbar {
     background-color: rgba(27, 14, 2, 0) !important;
@@ -8,8 +30,7 @@
     padding-right: 0;
     width: 80%;
   }
-.hero-text h1{
-  }
+
   .hero-text p{
     font-size: 30px;
   }
@@ -23,6 +44,9 @@
   .img1{
     margin-top: 20px;
     margin-bottom: 20px;
+  }
+  .img3{
+    top: -45px;
   }
   .second .container {
     flex-direction: column;
@@ -41,6 +65,10 @@
   .Menu p {
     font-size: 20px;
   }
+
+  #About-Us .container{
+    bottom: -60px;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -54,14 +82,30 @@
   
   #Menu h1 {
     margin-top: 20px;
-    font-size: 36px;
+    font-size: 37px;
   }
 
   #Menu p {
     font-size: 20px;
   }
 
+  #About-Us .cards{
+    width: 80% !important;
+  }
+  #About-Us h1{
+    font-size: 50px !important;
+  }
+  #About-Us .p1{
+    font-size: 23px !important;
+  }
 }
-
+@media screen and (max-width: 540px) {
+  #About-Us h1{
+    font-size: 40px !important;
+  }
+  #About-Us .p1{
+    font-size: 17px !important;
+  }
+}
 
 
