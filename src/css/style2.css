@@ -279,15 +279,63 @@ html {
   justify-content: center;
   max-height: 364px;
 }  
+#Menu .add{
+  display: flex;
+  gap: 1rem;
+}
+#Menu input{
+  width:50px;
+  text-align: center;
+  border-radius: 50%;
+  border-color:#f9c06a;
+  background-color: #f9c06a43;
+}
 #Menu .card:hover {
   transform: translateY(-5px);
 box-shadow: 0 -10px 20px #3f2600, 0 10px 20px #3f2600;}
 
-#Menu a{
+#Menu .btn-card{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
   background-color: #f9c06a;
   border-color: #f9c06a !important;
 }
-
+#Menu .btn-card-ok {
+  width: 45px;
+  height: 43px;
+  color: #f9c06a;
+  border-radius: 50%;
+  background-color: #441c12 ;
+  border-color: #441c12 !important;
+  font-size: 13px;
+  box-shadow: 0 4px 8px rgb(138, 83, 0);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-left: 1rem;
+}
+#Menu .btn-card-ok:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 16px rgba(249, 192, 106, 0.9), 0 0 12px rgba(249, 192, 106, 0.7);
+  cursor: pointer;
+  color: #3f2600;
+  border-color: #f9c06a !important;
+}
+#Menu .btn-order{
+  color: #3f2600;
+  margin-top: 50px;
+  font-size: 30px;
+  font-weight: bold;
+  padding: 20px 30px;
+  border-radius: 40%;
+  border-color: #f9c06a;
+  background-color: #f9c06a;
+}
+#Menu .btn-order:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(63, 38, 0, 0.4); 
+  color: #5a3b00; 
+    box-shadow: 0 0 20px 10px rgba(255, 204, 102, 0.6);
+}
 
 
 
@@ -394,10 +442,18 @@ box-shadow: 0 -10px 20px #3f2600, 0 10px 20px #3f2600;}
 
 
 
+#Contact-Us .container{
+  padding: 30px 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 #Contact-Us{
-  height: 500px;
+  height: 300px;
   margin-top: 110px;
   background-color: #441c12;
 }
+
 
 
