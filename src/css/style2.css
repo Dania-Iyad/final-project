@@ -412,6 +412,7 @@ box-shadow: 0 -10px 20px #3f2600, 0 10px 20px #3f2600;}
   color: #707070;
 }
 #About-Us .container{
+  text-align: center;
     position: relative;
     display: flex;
     margin-bottom: 82px;
