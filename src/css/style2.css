@@ -1,5 +1,9 @@
 html {
+  width: 100% !important;
   scroll-behavior: smooth;
+}
+html, body {
+  overflow-x: hidden;
 }
 * {
     margin: 0;
@@ -47,6 +51,8 @@ html {
     padding-top: 1.5rem;
   }
   .hero-text .container{
+    text-align: center;
+    gap: 4rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -115,7 +121,6 @@ html {
 }
 }
   .navbar-nav{
-    margin-left: auto;
     gap: 9rem;
   }
 
@@ -181,7 +186,11 @@ html {
   .hero-section button{
     font-weight: 900;
   }
-
+.hero-section .Buy{
+  color: white !important;
+  width: 40px;
+  height: 40px;
+}
 
 
 
@@ -367,6 +376,9 @@ box-shadow: 0 -10px 20px #3f2600, 0 10px 20px #3f2600;}
 .hero .navbar{
   background-color: #441c12 !important;
 }
+.navbar-collapse{
+  flex-grow: 0 !important ;
+}
 .hero-section p{
   font-size: clamp(30px, 2vw, 150px) ;
 }
@@ -445,15 +457,44 @@ box-shadow: 0 -10px 20px #3f2600, 0 10px 20px #3f2600;}
 #Contact-Us .container{
   padding: 30px 30px;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
+  gap: 10rem;
 }
 #Contact-Us{
-  height: 300px;
+
+  background-image:  linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)) , url("../images/Group\ 611.jpg");
   margin-top: 110px;
   background-color: #441c12;
 }
 
-
-
+#Contact-Us p{
+  color: white;
+}
+#Contact-Us img{
+  width: 20px;
+  height: 20px;
+}
+#Contact-Us .con{
+  display: flex;
+  gap: 1rem;
+}
+#Contact-Us h1{
+  margin-bottom: 65px;
+  font-size: 60px;
+}
+#Contact-Us .p2 {
+  font-size: 20px;
+}
+#Contact-Us .p1{
+  height: 60px !important;
+  font-size: 30px;
+}
+#Contact-Us .sec1{
+  display: flex !important;
+  flex-wrap: wrap;
+  width: 50%;
+}
+#Contact-Us .cons{
+  margin-top: 25px;
+}

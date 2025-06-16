@@ -18,6 +18,9 @@
   #About-Us .card{
     width: 1116px !important;
   }
+  #Contact-Us .p1{
+  font-size: 25px;
+}
 }
 
 @media screen and (max-width: 992px){
@@ -28,9 +31,8 @@
   .hero-text .container {
     padding-left: 0;
     padding-right: 0;
-    width: 80%;
   }
-
+  
   .hero-text p{
     font-size: 30px;
   }
@@ -39,7 +41,9 @@
     margin-top: 20px;
     margin-bottom: 20px;
   }
-
+.hero-section .name{
+  margin-right: 40% !important;
+}
 
   .img1{
     margin-top: 20px;
@@ -69,6 +73,39 @@
   #About-Us .container{
     bottom: -60px;
   }
+   #Contact-Us .p1{
+  font-size: 23px;
+  }
+  #Contact-Us .container{
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+  }
+  #Contact-Us .sec1 {
+    width: 100%;
+    display: flex;
+    flex-direction: row !important;
+  }
+  #Contact-Us .p1{
+    font-size: 25px !important;
+  }
+  #Contact-Us .p2{
+    font-size: 25px !important;
+  }
+  #Contact-Us .con{
+    font-size: 20px !important;
+  }
+  #Contact-Us .sec2{
+  display: flex !important;
+  gap: 4rem;
+  justify-content: center;
+  align-items: center;
+  }
+  .img3{
+    top: -110px !important;
+    z-index: -1;
+  }
+
 }
 
 @media screen and (max-width: 768px) {
