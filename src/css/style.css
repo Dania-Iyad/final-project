@@ -71,7 +71,7 @@ html {
   margin-right: 40px !important;
 }
 .hero-text .btn{
-  font-size: clamp(10px, 2vw, 50px) ;
+
   padding: 15px 25px;
   border-color: rgb(249, 192, 106) !important;
   background-color: rgb(249, 192, 106);
