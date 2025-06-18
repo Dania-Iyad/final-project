@@ -5,6 +5,7 @@
   #Contact-Us .sec1{
     margin: 100px;
   }
+  
 }
 @media screen and (max-width: 1000px) {
   .hero-section .navbar {
@@ -58,6 +59,7 @@
   .mid .card{
     min-height: 70%;
     width: 600px !important;
+    margin: 0;
   }
 
 }
