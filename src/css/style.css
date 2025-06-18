@@ -42,8 +42,8 @@ html {
     left: 0;
     width: 100%;
     z-index: 10000000;
-    background-color: rgba(0, 0, 0, 0.8);
-    backdrop-filter: blur(8px);
+    background-color: #341d0615;
+    backdrop-filter: blur(10px);
   }
   .transparent-navbar {
     background-color: transparent !important;
@@ -61,7 +61,7 @@ html {
   top: 50%;
   left: 12.3%; 
   transform: translateY(-50%);   
-  max-width: 550px;
+  max-width: 700px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -70,16 +70,33 @@ html {
   font-size: 25px;
   margin-right: 40px !important;
 }
-.hero-text .btn{
-
-  padding: 15px 25px;
-  border-color: rgb(249, 192, 106) !important;
+.hero-text .btn {
+  font-size: 40px;
+  padding: 20px 30px;
+  border: none;
+  border-radius: 8px;
   background-color: rgb(249, 192, 106);
+  color: #502d17;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
 }
+
+.hero-text .btn:hover {
+  background-color: #502d17; 
+  color: rgb(249, 192, 106) !important;
+  transform: scale(1.05);
+  box-shadow: 0 0 20px 5px #502d17 ;
+  transition: all 0.3s ease-in-out;
+}
+
+
 .hero-section p{
   font-size: 30px;
 }
-
+.hero-section .nameee{
+  margin-left: 110px;
+}
 .hero-text h1 {
   width: 100%;
   font-size: 200px !important;
@@ -127,9 +144,6 @@ html {
   }
   .nav-link:hover {
     color: #f9c06a !important;
-  }
-  .btn:hover{
-    background-color: #f9c06a !important;
   }
   .transparent-navbar {
     background-color: transparent !important;

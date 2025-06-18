@@ -300,10 +300,12 @@ html, body {
   background-color: #f9c06a43;
 }
 #Menu .card:hover {
+  border: none;
   transform: translateY(-5px);
-box-shadow: 0 -10px 20px #3f2600, 0 10px 20px #3f2600;}
+box-shadow: 0 -10px 20px #502d17, 0 10px 20px #3f2600;}
 
 #Menu .btn-card{
+  transition: all 0.3s ease-in-out;
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -316,11 +318,12 @@ box-shadow: 0 -10px 20px #3f2600, 0 10px 20px #3f2600;}
   color: #f9c06a;
   border-radius: 50%;
   background-color: #441c12 ;
-  border-color: #441c12 !important;
+  border-color: #502d17 !important;
   font-size: 13px;
   box-shadow: 0 4px 8px rgb(138, 83, 0);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   margin-left: 1rem;
+  transition: all 0.3s ease-in-out;
 }
 #Menu .btn-card-ok:hover {
   transform: scale(1.1);
@@ -329,22 +332,27 @@ box-shadow: 0 -10px 20px #3f2600, 0 10px 20px #3f2600;}
   color: #3f2600;
   border-color: #f9c06a !important;
 }
-#Menu .btn-order{
-  color: #3f2600;
+#Menu .btn-order {
+  color: #f9c06a;
   margin-top: 50px;
   font-size: 30px;
   font-weight: bold;
+  border: none;
   padding: 20px 30px;
-  border-radius: 40%;
-  border-color: #f9c06a;
-  background-color: #f9c06a;
+  border-radius: 50px;
+  background-color: #502d17;
+  transition: all 0.3s ease-in-out;
+  text-decoration: none; /* مهم */
+  display: inline-block; /* مهم */
 }
+
 #Menu .btn-order:hover {
   transform: scale(1.05);
-  box-shadow: 0 4px 15px rgba(63, 38, 0, 0.4); 
-  color: #5a3b00; 
-    box-shadow: 0 0 20px 10px rgba(255, 204, 102, 0.6);
+  box-shadow: 0 0 20px 10px rgba(255, 204, 102, 0.6);
+  color: #5a3b00;
+  background-color: #f9c06a;
 }
+
 
 
 
@@ -463,8 +471,8 @@ box-shadow: 0 -10px 20px #3f2600, 0 10px 20px #3f2600;}
   gap: 10rem;
 }
 #Contact-Us{
-
-  background-image:  linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)) , url("../images/Group\ 611.jpg");
+  font-family: fangsong;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../images/Group\ 6111.png");
   margin-top: 110px;
   background-color: #441c12;
 }

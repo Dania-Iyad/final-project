@@ -1,0 +1,186 @@
+@media screen and (max-width: 1200px){
+    #Contact-Us .p1{
+  font-size: 25px;
+}
+  #Contact-Us .sec1{
+    margin: 100px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .hero-section .navbar {
+    height: auto;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    top: 0;
+    left: 0;
+    background-color: #341d063a;
+
+  }
+  .main{
+    margin: 0;
+  }
+  .blur-layer {
+    margin: 0;
+  }
+  .hero-section .container {
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+  }
+.navbar-nav{
+    gap: 3rem;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .name {
+    display: flex;
+    flex-direction: row;
+    font-size: 35px;
+    margin-bottom: 0;
+    margin-right: 0 !important;
+  }
+
+  .name span {
+    display: inline;
+  }
+
+  .hero-section .btn-nav {
+    margin-bottom: 0;
+  }
+
+  .mid .card{
+    min-height: 70%;
+    width: 600px !important;
+  }
+
+}
+@media screen and (max-width: 992px) {
+  #Contact-Us .p1{
+    font-size: 23px;
+    }
+    #Contact-Us .sec1{
+    margin:0;
+  }
+    #Contact-Us .container{
+      display: flex;
+      flex-direction: column;
+      gap: 5rem;
+    }
+    #Contact-Us .sec1 {
+      width: 100%;
+      display: flex;
+      flex-direction: row !important;
+    }
+    #Contact-Us .p1{
+      font-size: 25px !important;
+    }
+    #Contact-Us .p2{
+      font-size: 25px !important;
+    }
+    #Contact-Us .con{
+      font-size: 20px !important;
+    }
+    #Contact-Us .sec2{
+    display: flex !important;
+    gap: 4rem;
+    justify-content: center;
+    align-items: center;
+    }
+    .img3{
+      top: -110px !important;
+      z-index: -1;
+    }
+    .hero-text .btn{
+      font-size: 25px;
+    }
+    .hero-section .nameee{
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 770px) {
+    .mid2 h2{
+      font-size: 35px;
+    }
+    .mid2 .input{
+      width: 350px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .mid2 h2{
+      font-size: 30px;
+    }
+    .mid2 .input{
+      width: 300px;
+    }
+}
+
+@media screen and (max-width: 570px) {
+    .mid2 h2{
+      font-size: 27px;
+    }
+    .mid2 .input{
+      width: 250px;
+    }
+}
+
+@media screen and (max-width: 530px) {
+    .mid2 h2{
+      font-size: 23px;
+    }
+    .mid2 .input{
+      width: 200px;
+      height: 40px;
+    }
+}
+
+@media screen and (max-width: 470px) {
+    .mid2 h2{
+      font-size: 20px;
+    }
+    .mid2 .input{
+      width: 200px;
+      height: 40px;
+    }
+    .mid2 .btn-buy{
+      font-size: 17px;
+    }
+    .mid2 h3{
+      font-size: 20px !important;
+    }
+    .mid2 .input::placeholder {
+      font-size: 15px;
+    }
+    #Contact-Us .sec2{
+    display: flex !important;
+    gap: 1rem !important;
+    flex-direction: column !important;
+  }
+}
+
+@media screen and (max-width: 426px) {
+    .mid2 h2{
+      font-size: 15px;
+    }
+    .mid2 h3{
+      font-size: 13px !important;
+    }
+    .mid2 .input{
+      width: 200px;
+      height: 40px;
+    }
+    .mid2 .btn-buy{
+      font-size: 17px;
+    }
+    .mid2 .input::placeholder {
+      font-size: 15px;
+    }
+}
