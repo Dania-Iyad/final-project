@@ -116,6 +116,9 @@ main {
 
 
 .mid2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   height: 430px !important;
   font-family: fangsong;
   padding: 50px 50px;
