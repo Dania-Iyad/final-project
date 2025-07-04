@@ -71,10 +71,10 @@ html {
   margin-right: 40px !important;
 }
 .hero-text .btn {
-  font-size: 40px;
+  font-size: 30px;
   padding: 20px 30px;
   border: none;
-  border-radius: 8px;
+  border-radius: 70px;
   background-color: rgb(249, 192, 106);
   color: #502d17;
   font-weight: bold;
@@ -124,6 +124,7 @@ html {
   100% {content: "Welcom";}
 }
 .hero-text a{
+    border-radius: 20px;
   color: black;
   text-decoration: none;
 }
@@ -151,7 +152,10 @@ html {
   .navbar-nav .nav-link:hover {
     color: #f9c06a !important;
   }
-
+a.btn {
+  display: inline-block;
+  text-align: center;
+}
   .btn-warning:hover {
     background-color: #f9c06a;
     transform: scale(1.05);
