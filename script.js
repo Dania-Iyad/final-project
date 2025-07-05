@@ -18,8 +18,27 @@ function showWaitAndRedirect(destination) {
   }, 2000);
 }
 
-document.addEventListener("DOMContentLoaded", () => {
+function showModal(title, message, buttons = []) {
+  document.getElementById("customModalLabel").textContent = title;
+  document.getElementById("customModalBody").textContent = message;
 
+  const footer = document.getElementById("customModalFooter");
+  footer.innerHTML = "";
+
+  buttons.forEach(btn => {
+    const button = document.createElement("button");
+    button.className = "btn " + (btn.class || "btn-dark");
+    button.textContent = btn.text;
+    if (btn.style) button.style = btn.style;
+    if (btn.dismiss) button.setAttribute("data-bs-dismiss", "modal");
+    if (btn.onclick) button.onclick = btn.onclick;
+    footer.appendChild(button);
+  });
+
+  new bootstrap.Modal(document.getElementById("customModal")).show();
+}
+
+document.addEventListener("DOMContentLoaded", () => {
   if (location.pathname.includes("order.html")) {
     const okButtons = document.querySelectorAll(".btn-card-ok");
 
@@ -100,10 +119,16 @@ document.addEventListener("DOMContentLoaded", () => {
         });
 
         div.querySelector(".delete").addEventListener("click", () => {
-          if (confirm("Are you sure you want to remove this item?")) {
-            cart.splice(index, 1);
-            refreshCart();
-          }
+          showModal("⚠️ Confirm", "Are you sure you want to remove this item?", [
+            { text: "Cancel", class: "btn-light", style: "color: #3f2600;", dismiss: true },
+            {
+              text: "OK", class: "btn-dark", style: "color: #3f2600; background-color: white;", dismiss: true,
+              onclick: () => {
+                cart.splice(index, 1);
+                refreshCart();
+              }
+            }
+          ]);
         });
 
         cardBody.appendChild(div);
@@ -118,14 +143,20 @@ document.addEventListener("DOMContentLoaded", () => {
       cardBody.appendChild(totalDiv);
 
       const clearBtn = document.createElement("button");
-      clearBtn.textContent = "🗑️ Clear Cart";
+      clearBtn.textContent = "Clear Cart";
       clearBtn.className = "btn btn-warning mt-2 w-100";
       clearBtn.addEventListener("click", () => {
-        if (confirm("Are you sure you want to clear the cart?")) {
-          localStorage.removeItem("cart");
-          cart = [];
-          displayCart();
-        }
+        showModal("Confirm", "Are you sure you want to clear the cart?", [
+          { text: "Cancel", class: "btn-light", style: "color: #3f2600;", dismiss: true },
+          {
+            text: "OK", class: "btn-dark", style: "color: #3f2600; background-color: white;", dismiss: true,
+            onclick: () => {
+              localStorage.removeItem("cart");
+              cart = [];
+              displayCart();
+            }
+          }
+        ]);
       });
       cardBody.appendChild(clearBtn);
     };
@@ -142,7 +173,9 @@ document.addEventListener("DOMContentLoaded", () => {
       const phone = document.querySelector("#buyerPhone").value.trim();
 
       if (!name || !address || !phone) {
-        alert("Please fill all fields");
+        showModal("Warning", "Please fill in all the required fields: Name, Address, and Phone", [
+          { text: "OK", class: "btn-dark", style: "color: #3f2600; background-color: white;", dismiss: true }
+        ]);
         return;
       }
 
@@ -176,13 +209,17 @@ document.addEventListener("DOMContentLoaded", () => {
       const cvv = document.getElementById("cvv").value.trim();
 
       const cart = JSON.parse(localStorage.getItem("cart")) || [];
-        if (cart.length === 0) {
-          alert("Your cart is empty! Add items before buying.");
-          return;
-        }
+      if (cart.length === 0) {
+        showModal("Warning", "Your cart is empty! Please add items before checking out.", [
+          { text: "OK", class: "btn-dark", style: "color: #3f2600; background-color: white;", dismiss: true }
+        ]);
+        return;
+      }
 
       if (!fullName || !address || !cardNumber || !cvv) {
-        alert("Please fill in all fields.");
+        showModal("Warning", "Please fill in all the required fields: Name, Address, Card, CVV", [
+          { text: "OK", class: "btn-dark", style: "color: #3f2600; background-color: white;", dismiss: true }
+        ]);
         return;
       }
 
@@ -211,7 +248,6 @@ document.addEventListener("DOMContentLoaded", () => {
     if (link.getAttribute("target") !== "_blank") {
       link.addEventListener("click", (e) => {
         const href = link.getAttribute("href");
-
         if (!href || href === "" || href.startsWith("#")) return;
 
         e.preventDefault();
@@ -225,8 +261,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   filterButtons.forEach(button => {
     button.addEventListener("click", () => {
-      const type = button.textContent.toLowerCase(); 
-
+      const type = button.textContent.toLowerCase();
       menuCards.forEach(card => {
         const cardType = card.getAttribute("data-type");
         card.style.display = (type === "all" || cardType === type) ? "block" : "none";
