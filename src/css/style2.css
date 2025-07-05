@@ -218,7 +218,26 @@ html, body {
   position: relative; 
 }
 
-
+#Menu .btns{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+  margin-bottom: 30px;
+  gap: 4rem !important;
+}
+.btns .btn{
+  color: #f9c06a;
+  border-radius: 50px;
+  background-color: #441c12 ;
+  width: 100px;
+  height: 80px;
+  border-color: #502d17 !important;
+  font-size: 25px;
+  box-shadow: 0 4px 8px rgb(138, 83, 0);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: all 0.3s ease-in-out;
+}
 #Menu {
   margin-top: 270px;
   font-family: fangsong;
@@ -281,7 +300,7 @@ html, body {
   height: 1000px !important;
   width: 250px;
   background-color: #f9c06a14;
-  border-color: #b76f03;
+  border-color: #ffff;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -290,6 +309,9 @@ html, body {
 }  
 #Menu .add{
   display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2px;
   gap: 1rem;
 }
 #Menu input{
@@ -329,6 +351,13 @@ box-shadow: 0 -10px 20px #502d17, 0 10px 20px #3f2600;}
   color: #3f2600;
   border-color: #f9c06a !important;
 }
+#Menu .btns .btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 16px rgba(249, 192, 106, 0.9), 0 0 12px rgba(249, 192, 106, 0.7);
+  cursor: pointer;
+  color: #3f2600;
+  border-color: #f9c06a !important;
+}
 #Menu .btn-order {
   color: #f9c06a;
   margin-top: 50px;
@@ -337,16 +366,16 @@ box-shadow: 0 -10px 20px #502d17, 0 10px 20px #3f2600;}
   border: none;
   padding: 20px 30px;
   border-radius: 50px;
-  background-color: #502d17;
+  background-color: #3f2600;
   transition: all 0.3s ease-in-out;
-  text-decoration: none; /* مهم */
-  display: inline-block; /* مهم */
+  text-decoration: none; 
+  display: inline-block; 
 }
 
 #Menu .btn-order:hover {
   transform: scale(1.05);
   box-shadow: 0 0 20px 10px rgba(255, 204, 102, 0.6);
-  color: #5a3b00;
+  color: #3f2600;
   background-color: #f9c06a;
 }
 
@@ -355,7 +384,7 @@ box-shadow: 0 -10px 20px #502d17, 0 10px 20px #3f2600;}
 
 
 
- .hero-text2 {
+.hero-text2 {
   font-family: fangsong;
   position: absolute;
   top: 50%;
@@ -437,7 +466,7 @@ box-shadow: 0 -10px 20px #502d17, 0 10px 20px #3f2600;}
 }
 #About-Us .card:hover {
   transform: scale(1.05); 
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* ظل ناعم */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); 
   cursor: pointer;
   box-shadow: 0 8px 16px #FFEED8;
 }
